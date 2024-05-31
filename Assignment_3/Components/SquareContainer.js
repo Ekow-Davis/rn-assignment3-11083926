@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     elevation: 5, // Optional: for shadow effect on Android
     borderRadius: 16,
-    margin: 8,
+    margin: 3,
   },
 
   label: {

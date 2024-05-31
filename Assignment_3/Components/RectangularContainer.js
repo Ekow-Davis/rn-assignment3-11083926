@@ -11,11 +11,11 @@ const RectangularContainer = ({ label }) => {
 
 const styles = StyleSheet.create({
     container: {
-      width: 300,  // Width of the square container
-      height: 150, // Height of the square container
+      width: 400,  // Width of the square container
+      height: 300, // Height of the square container
       backgroundColor: '#ffffff', // White background for the square container
       justifyContent: 'center',
-      alignItems: 'center',
+      
       elevation: 5, // Optional: for shadow effect on Android
       borderRadius: 16,
       margin: 8,
