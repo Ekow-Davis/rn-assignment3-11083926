@@ -11,11 +11,10 @@ const RectangularContainer = ({ label }) => {
 
 const styles = StyleSheet.create({
     container: {
-      width: 400,  // Width of the square container
-      height: 300, // Height of the square container
+      width: 600,  // Width of the square container
+      height: 150, // Height of the square container
       backgroundColor: '#ffffff', // White background for the square container
-      justifyContent: 'center',
-      
+      justifyContent: 'center',      
       elevation: 5, // Optional: for shadow effect on Android
       borderRadius: 16,
       margin: 8,
@@ -23,7 +22,7 @@ const styles = StyleSheet.create({
   
     label: {
       position: 'absolute',
-      top: 20,
+      top: 40,
       left: 10,
       backgroundColor: 'rgba(255, 255, 255, 0.7)', // Semi-transparent background for readability
       paddingHorizontal: 5,
