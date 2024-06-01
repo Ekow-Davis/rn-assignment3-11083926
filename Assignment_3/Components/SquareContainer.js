@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff', // White background for the square container
     justifyContent: 'center',
     alignItems: 'center',
+    overflow: 'hidden',
+    marginHorizontal: 10,
     elevation: 5, // Optional: for shadow effect on Android
     borderRadius: 16,
     margin: 3,
