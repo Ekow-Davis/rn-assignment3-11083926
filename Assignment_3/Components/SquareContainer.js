@@ -6,7 +6,7 @@ const SquareContainer = ({ imageUrl, label, minilabel }) => {
       <Text style={styles.label}>{label}</Text>
       <Text style={styles.minilabel}>{minilabel}</Text>
       <Image
-        source={{ uri: imageUrl }}
+        source={imageUrl}
         style={styles.image}
       />
     </View>
