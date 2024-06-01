@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     borderRadius: 3,
     fontSize: 14,
-    fontWeight: 'bold',
+    fontWeight: 'bold', 
     color: '#333', // Text color
   },
 

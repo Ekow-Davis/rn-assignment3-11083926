@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
       elevation: 5, // Optional: for shadow effect on Android
       borderRadius: 16, //Curved Edges of the container
       margin: 8,
+      borderWidth: 1,
+      borderColor: '#E8D1BA',
     },
   
     label: {

@@ -21,22 +21,23 @@ const App =() => {
 
   return (
     <>
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1,}}>
     <View style={styles.container}>
     <StatusBar style="auto" />
-    <View style={{marginBottom: 20, marginTop: 10, flexDirection: 'row',}}>
+    <ScrollView>
+    <View style={{marginBottom: 20, marginTop: 50, flexDirection: 'row',}}>
       <View>
-      <Text style={{fontSize: 28, fontWeight: 'bold',}}>Hello, Devs</Text>
-      <Text style={{fontsize: 8}}>14 tasks today</Text>
+      <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 40,}}>Hello, Devs</Text>
+      <Text style={{fontsize: 8, marginLeft: 40,}}>14 tasks today</Text>
       </View>    
-      <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", }} />
+      <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", marginLeft: 100,}} />
     </View>
     <View style={{flexDirection: 'row',}}>
-      <TextInput style={{backgroundColor: "white", width: 300, height: 35, borderRadius: 10, }} />
-      <Image source={FilterImage} style={{height: 50, width: 50, }} />
+      <TextInput style={{backgroundColor: "white", width: 200, height: 35, borderRadius: 10, marginLeft: 40, }} />
+      <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 20, }} />
     </View>
-    <Text style={{fontSize: 24, fontWeight: 'bold'}}>Categories</Text>
-    <ScrollView horizontal={true} contentContainerStyle={{alignItems: 'center', paddingHorizontal: 10, flexDirection: 'row',}}>
+    <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40,}}>Categories</Text>
+    <ScrollView horizontal={true} contentContainerStyle={{alignItems: 'center', paddingLeft: 20, paddingHorizontal: 10, flexDirection: 'row',}}>
         <SquareContainer
          imageUrl="./assets/Images/CrossLeg.png"
           label="Excercise"
@@ -63,7 +64,7 @@ const App =() => {
           minilabel="12 Tasks" />
       </ScrollView>
       <View>
-        <Text>Ongoing Task</Text>
+        <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 10,}}>Ongoing Task</Text>
         <FlatList
             data={data}
             renderItem={({ item }) => (
@@ -72,9 +73,10 @@ const App =() => {
               />
             )}
             keyExtractor={(item) => item.key}
-            style={{flexGrow: 0,}}
+            style={{flexGrow: 0, marginLeft: 10,}}
           />
       </View>
+    </ScrollView>
     </View>
     </SafeAreaView>
       </>
