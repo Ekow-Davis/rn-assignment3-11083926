@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, ScrollView, Image, Text, View, FlatList } from 'react-native';
+import { SafeAreaView, StyleSheet, ScrollView, Image, TextInput, Text, View, FlatList } from 'react-native';
 import SquareContainer from './Components/SquareContainer';
 import RectangularContainer from './Components/RectangularContainer'
 
@@ -12,10 +12,59 @@ const data = [
 ];
 
 const ProfileImage = require("./assets/Images/ProfilePicture.png");
+const FilterImage = require("./assets/Images/FilterIcon.png");
 
 
-/*Removes the Square Components*/
-{/* <FlatList
+
+
+const App =() => {
+
+  return (
+    <>
+    <SafeAreaView>
+    <View style={styles.container}>
+    <StatusBar style="auto" />
+    <View style={{marginBottom: 20, marginTop: 10, flexDirection: 'row',}}>
+      <View>
+      <Text style={{fontSize: 28, fontWeight: 'bold',}}>Hello, Devs</Text>
+      <Text style={{fontsize: 8}}>14 tasks today</Text>
+      </View>    
+      <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", }} />
+    </View>
+    <View style={{flexDirection: 'row',}}>
+      <TextInput style={{backgroundColor: "white", width: 300, height: 35, borderRadius: 10, }} />
+      <Image source={FilterImage} style={{height: 50, width: 50, }} />
+    </View>
+    <Text style={{fontSize: 24, fontWeight: 'bold'}}>Categories</Text>
+    <ScrollView horizontal={true} contentContainerStyle={{alignItems: 'center', paddingHorizontal: 10, flexDirection: 'row',}}>
+        <SquareContainer
+         imageUrl="./assets/Images/CrossLeg.png"
+          label="Excercise"
+          minilabel="12 Tasks" />
+        <SquareContainer
+         imageUrl="./assets/Images/DeskStudy.png"
+          label="Study"
+          minilabel="12 Tasks" />
+        <SquareContainer
+         imageUrl="./assets/Images/CrossLeg.png"
+          label="Cook"
+          minilabel="12 Tasks" />
+        <SquareContainer
+         imageUrl="./assets/Images/DeskStudy.png"
+          label="Code"
+          minilabel="12 Tasks" />
+        <SquareContainer
+         imageUrl="./assets/Images/CrossLeg.png"
+          label="Teach"
+          minilabel="12 Tasks" />
+        <SquareContainer
+         imageUrl="./assets/Images/DeskStudy.png"
+          label="Party"
+          minilabel="12 Tasks" />
+      </ScrollView>
+      <View>
+        <Text>Ongoing Task</Text>
+        <FlatList
             data={data}
             renderItem={({ item }) => (
               <RectangularContainer
@@ -24,52 +73,10 @@ const ProfileImage = require("./assets/Images/ProfilePicture.png");
             )}
             keyExtractor={(item) => item.key}
             style={{flexGrow: 0,}}
-          /> */}
-
-
-const App =() => {
-
-  return (
-    <>
-    <View style={styles.container}>
-    <StatusBar style="auto" />
-    <View style={{marginBottom: 20,}}>
-      <Text style={{fontSize: 28, fontWeight: 'bold',}}>Hello, Devs</Text>
-      <Text style={{fontsize: 8}}>14 tasks today</Text>
-      <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10,width: 100, height: 100,}} />
-    </View>
-    <Text style={{fontSize: 24, fontWeight: 'bold'}}>Categories</Text>
-    <ScrollView horizontal={true} contentContainerStyle={{alignItems: 'center', paddingHorizontal: 10, flexDirection: 'row',}}>
-        <SquareContainer
-         imageUrl="./assets/Images/CrossLeg.png"
-          label="Bat"
-          minilabel="12 Tasks" />
-        <SquareContainer
-         imageUrl="./assets/Images/DeskStudy.png"
-          label="Study"
-          minilabel="12 Tasks" />
-        <SquareContainer
-         imageUrl="./assets/Images/CrossLeg.png"
-          label="Test"
-          minilabel="12 Tasks" />
-        <SquareContainer
-         imageUrl="./assets/Images/DeskStudy.png"
-          label="Hello"
-          minilabel="12 Tasks" />
-        <SquareContainer
-         imageUrl="./assets/Images/CrossLeg.png"
-          label="Test"
-          minilabel="12 Tasks" />
-        <SquareContainer
-         imageUrl="./assets/Images/DeskStudy.png"
-          label="Study"
-          minilabel="12 Tasks" />
-      </ScrollView>
-      <View>
-        <Text>Ongoing Task</Text>
-        
+          />
       </View>
     </View>
+    </SafeAreaView>
       </>
   );
 }
