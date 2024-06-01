@@ -11,7 +11,7 @@ const RectangularContainer = ({ label }) => {
 
 const styles = StyleSheet.create({
     container: {
-      width: 600,  // Width of the square container
+      width: 350,  // Width of the square container
       height: 120, // Height of the square container
       backgroundColor: '#ffffff', // White background for the square container
       justifyContent: 'center',

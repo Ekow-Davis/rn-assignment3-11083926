@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet, ScrollView, Image, TextInput, Text, View, Fla
 import SquareContainer from './Components/SquareContainer';
 import RectangularContainer from './Components/RectangularContainer'
 
-const data = [
+const horizontalData = [
   { key: '1', label: 'Mobile App Dev' },
   { key: '2', label: 'Web Dev' },
   { key: '3', label: 'Creative Dev' },
@@ -33,10 +33,10 @@ const App =() => {
       <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", marginLeft: 100,}} />
     </View>
     <View style={{flexDirection: 'row',}}>
-      <TextInput style={{backgroundColor: "white", width: 200, height: 35, borderRadius: 10, marginLeft: 40, }} />
+      <TextInput style={{backgroundColor: "white", width: 250, height: 45, borderRadius: 10, marginLeft: 40, }} />
       <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 20, }} />
     </View>
-    <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40,}}>Categories</Text>
+    <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 20,}}>Categories</Text>
     <ScrollView horizontal={true} contentContainerStyle={{alignItems: 'center', paddingLeft: 20, paddingHorizontal: 10, flexDirection: 'row',}}>
         <SquareContainer
          imageUrl="./assets/Images/CrossLeg.png"
@@ -66,7 +66,7 @@ const App =() => {
       <View>
         <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 10,}}>Ongoing Task</Text>
         <FlatList
-            data={data}
+            data={horizontalData}
             renderItem={({ item }) => (
               <RectangularContainer
                 label={item.label}
