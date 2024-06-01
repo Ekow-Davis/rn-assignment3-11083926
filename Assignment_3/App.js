@@ -41,7 +41,7 @@ const handleFilterPress = () => {
 };
 
 const handleButtonPress = () => {
-  alert('Thank you for your time')
+  alert('Button can only be rendered using string (for andriod)\nThank you for your time')
 }
 
 const App =() => {
