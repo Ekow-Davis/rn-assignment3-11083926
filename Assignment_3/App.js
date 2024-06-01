@@ -1,31 +1,48 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, ScrollView, Image, TextInput, Text, View, FlatList } from 'react-native';
+import { SafeAreaView, Button, Pressable, StyleSheet, ScrollView, Image, TextInput, Text, View, FlatList } from 'react-native';
 import SquareContainer from './Components/SquareContainer';
 import RectangularContainer from './Components/RectangularContainer'
 
 const verticalData = [
-  { key: '1', label: 'Mobile App Dev' },
-  { key: '2', label: 'Web Dev' },
-  { key: '3', label: 'Creative Dev' },
+  { key: '1', label: 'Mobile App Deveopment' },
+  { key: '2', label: 'Web Development' },
+  { key: '3', label: 'Creative Development' },
   { key: '4', label: 'Algorithms' },
-  { key: '5', label: 'DS' },
+  { key: '5', label: 'Data Structures' },
+  { key: '6', label: 'Programming Fundamentals' },
+  { key: '7', label: 'Programming 1' },
+  { key: '8', label: 'Intro to Calculus' },
+  { key: '9', label: 'Vectors & Mechanics' },
+  { key: '10', label: 'Data Mining' },
+  { key: '11', label: 'Office Tools Productivity' },
+  { key: '12', label: 'Digital & Logical Systems' },
+  { key: '13', label: 'Critical Thinkning' },
+  { key: '14', label: 'Machine Learning' },
+  { key: '15', label: 'System Administration' },
 ];
 
 const horizontalData = [
-  { key: '1', imageUrl: require('./assets/Images/CrossLeg.png'), label: 'Exercise', minilabel: '12 Tasks' },
+  { key: '1', imageUrl: require('./assets/Images/CrossLeg.png'), label: 'Create', minilabel: '12 Tasks' },
   { key: '2', imageUrl: require('./assets/Images/DeskStudy.png'), label: 'Study', minilabel: '12 Tasks' },
   { key: '3', imageUrl: require('./assets/Images/CrossLeg.png'), label: 'Cook', minilabel: '12 Tasks' },
   { key: '4', imageUrl: require('./assets/Images/DeskStudy.png'), label: 'Code', minilabel: '12 Tasks' },
   { key: '5', imageUrl: require('./assets/Images/CrossLeg.png'), label: 'Teach', minilabel: '12 Tasks' },
   { key: '6', imageUrl: require('./assets/Images/DeskStudy.png'), label: 'Party', minilabel: '12 Tasks' },
+  { key: '7', imageUrl: require('./assets/Images/CrossLeg.png'), label: 'Teach', minilabel: '12 Tasks' },
+  { key: '8', imageUrl: require('./assets/Images/DeskStudy.png'), label: 'Party', minilabel: '12 Tasks' },
 ];
 
 const ProfileImage = require("./assets/Images/ProfilePicture.png");
 const FilterImage = require("./assets/Images/FilterIcon.png");
 const SearchImage = require("./assets/Images/SearchIcon.png");
 
+const handleFilterPress = () => {
+  alert('Filter button pressed.\nCannot use button component for andriod - expo go');
+};
 
-
+const handleButtonPress = () => {
+  alert('Thank you for your time')
+}
 
 const App =() => {
 
@@ -53,7 +70,10 @@ const App =() => {
       <TextInput placeholder='Search' placeholderTextColor='#999' style={{backgroundColor: "white", width: 150, height: 40, borderRadius: 10, marginLeft: 45, top: -23, }} />
       </View>
 
-      <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 20, }} />
+      <Pressable onPress={handleFilterPress}>
+      <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 20, }} /> 
+      </Pressable>
+
     </View>
 
     <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 20,}}>Categories</Text>
@@ -87,6 +107,8 @@ const App =() => {
             style={{flexGrow: 0, marginLeft: 10,}}
           />
       </View>
+
+      <Button title='Test'onPress={handleButtonPress} style={{height: 20, marginTop: 20,}}/>
 
     </ScrollView>
     </View>
