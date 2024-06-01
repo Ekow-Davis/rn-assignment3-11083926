@@ -37,22 +37,27 @@ const App =() => {
     <ScrollView>
 
     <View style={{marginBottom: 20, marginTop: 50, flexDirection: 'row',}}>
+      
       <View>
       <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 40,}}>Hello, Devs</Text>
       <Text style={{fontsize: 8, marginLeft: 40,}}>14 tasks today</Text>
-      </View>    
+      </View> 
+
       <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", marginLeft: 135,}} />
     </View>
 
-    <View style={{flexDirection: 'row', marginLeft: 10,}}>
+    <View style={{flexDirection: 'row', marginLeft: 20,}}>
+      
       <View style={{backgroundColor: "white", width: 280, height: 45, marginLeft: 10, borderRadius: 10,}}>
-        <Image source={SearchImage} style={{width: 30, height: 30, top: 10, marginLeft: 10, marginRight: 5,}}/>
-      <TextInput placeholder='Search' placeholderTextColor='#999' style={{backgroundColor: "white", width: 150, height: 40, borderRadius: 10, marginLeft: 40, top: -27, }} />
+        <Image source={SearchImage} style={{width: 25, height: 25, top: 10, marginLeft: 10, marginRight: 5,}}/>
+      <TextInput placeholder='Search' placeholderTextColor='#999' style={{backgroundColor: "white", width: 150, height: 40, borderRadius: 10, marginLeft: 45, top: -23, }} />
       </View>
+
       <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 20, }} />
     </View>
 
     <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 20,}}>Categories</Text>
+    
     <FlatList
           horizontal
           data={horizontalData}
@@ -70,6 +75,7 @@ const App =() => {
 
       <View>
         <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 10,}}>Ongoing Task</Text>
+        
         <FlatList
             data={verticalData}
             renderItem={({ item }) => (
@@ -81,7 +87,7 @@ const App =() => {
             style={{flexGrow: 0, marginLeft: 10,}}
           />
       </View>
-      
+
     </ScrollView>
     </View>
     </SafeAreaView>
