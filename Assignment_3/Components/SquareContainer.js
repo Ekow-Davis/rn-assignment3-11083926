@@ -15,14 +15,14 @@ const SquareContainer = ({ imageUrl, label, minilabel }) => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 200,  // Width of the square container
-    height: 200, // Height of the square container
-    backgroundColor: '#ffffff', // White background for the square container
+    width: 200,  
+    height: 200, 
+    backgroundColor: '#ffffff', 
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
     marginHorizontal: 10,
-    elevation: 5, // Optional: for shadow effect on Android
+    elevation: 5, 
     borderRadius: 16,
     margin: 3,
   },
@@ -31,31 +31,31 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     left: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.7)', // Semi-transparent background for readability
+    backgroundColor: 'rgba(255, 255, 255, 0.7)', 
     paddingHorizontal: 5,
     paddingVertical: 2,
     borderRadius: 3,
     fontSize: 14,
     fontWeight: 'bold', 
-    color: '#333', // Text color
+    color: '#333', 
   },
 
   minilabel: {
     position: 'absolute',
     top: 28,
     left: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.7)', // Semi-transparent background for readability
+    backgroundColor: 'rgba(255, 255, 255, 0.7)', 
     paddingHorizontal: 5,
     paddingVertical: 2,
     borderRadius: 3,
     fontSize: 8,
-    color: '#333', // Text color
+    color: '#333', 
   },
 
   image: {
-    width: '70%', // Ensures the image fills the container
-    height: '75%', // Ensures the image fills the container
-    resizeMode: 'cover', // Adjusts how the image fits into the container
+    width: '70%', 
+    height: '75%', 
+    resizeMode: 'cover',
   },
 });
 
