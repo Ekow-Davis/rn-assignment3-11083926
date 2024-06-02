@@ -3,7 +3,15 @@ Assignment 3 for DCIT 202
 
 ## Screenshots
 Screenshots on how the app looks.
+![Screenshot_1](https://github.com/Ekow-Davis/rn-assignment3-11083926/assets/152081404/57137c96-4445-4c82-8cc8-4b9c8fddcd00)
 
+![Screenshot_2_Categories](https://github.com/Ekow-Davis/rn-assignment3-11083926/assets/152081404/760ef7af-5e25-4837-9ed8-55ebb5676114)
+
+![Screenshot_3_Pressable_FilterButton](https://github.com/Ekow-Davis/rn-assignment3-11083926/assets/152081404/2f53c9a3-894b-4e0d-b7be-38b075fe9138)
+
+![Screenshot_4_Tasks](https://github.com/Ekow-Davis/rn-assignment3-11083926/assets/152081404/a000fd13-45a6-4a9e-acf9-d3bcf6929620)
+
+![Screenshot_5_OngoingTasks](https://github.com/Ekow-Davis/rn-assignment3-11083926/assets/152081404/b0feb47d-870b-4f61-b67a-4ae083218517)
 
 ## Components Used
 Below are the components I used, some custom made, others derived from the react library
