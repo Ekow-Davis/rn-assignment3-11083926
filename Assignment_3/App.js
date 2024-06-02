@@ -37,11 +37,11 @@ const FilterImage = require("./assets/Images/FilterIcon.png");
 const SearchImage = require("./assets/Images/SearchIcon.png");
 
 const handleFilterPress = () => {
-  alert('Filter button pressed.\nCannot use button component for andriod to render images through expo go');
+  alert('Filter button pressed.\nCannot use button component for android to render images through expo go');
 };
 
 const handleButtonPress = () => {
-  alert('Button can only be rendered using string (for andriod using expo)\nThank you for your time')
+  alert('Button can only be rendered using string (for android using expo)\nThank you for your time')
 }
 
 const App =() => {
@@ -53,19 +53,19 @@ const App =() => {
     <StatusBar style="auto" />
     <ScrollView>
 
-    <View style={{marginBottom: 20, marginTop: 50, flexDirection: 'row',}}>
+    <View style={{marginBottom: 20, marginTop: 60, flexDirection: 'row',}}>
       
       <View>
-      <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 40,}}>Hello, Devs</Text>
-      <Text style={{fontsize: 8, marginLeft: 40,}}>14 tasks today</Text>
+      <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 30,}}>Hello, Devs</Text>
+      <Text style={{fontsize: 8, marginLeft: 30,}}>14 tasks today</Text>
       </View> 
 
-      <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", marginLeft: 135,}} />
+      <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", marginLeft: 140,}} />
     </View>
 
-    <View style={{flexDirection: 'row', marginLeft: 20,}}>
+    <View style={{flexDirection: 'row', marginLeft: 10,}}>
       
-      <View style={{backgroundColor: "white", width: 280, height: 45, marginLeft: 10, borderRadius: 10,}}>
+      <View style={{backgroundColor: "white", width: 280, height: 47, marginLeft: 10, borderRadius: 10, top: 3,}}>
         <Image source={SearchImage} style={{width: 25, height: 25, top: 10, marginLeft: 10, marginRight: 5,}}/>
       <TextInput placeholder='Search' placeholderTextColor='#999' style={{backgroundColor: "white", width: 150, height: 40, borderRadius: 10, marginLeft: 45, top: -23, }} />
       </View>
@@ -76,7 +76,7 @@ const App =() => {
 
     </View>
 
-    <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 20,}}>Categories</Text>
+    <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 30, marginTop: 20, marginBottom: 20,}}>Categories</Text>
     
     <FlatList
           horizontal
@@ -89,12 +89,12 @@ const App =() => {
             />
           )}
           keyExtractor={(item) => item.key}
-          contentContainerStyle={styles.horizontalList}
+          contentContainerStyle={{alignItems: 'center', paddingLeft: 20,}}
           showsHorizontalScrollIndicator={false}
         />
 
       <View>
-        <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 40, marginTop: 20, marginBottom: 10,}}>Ongoing Task</Text>
+        <Text style={{fontSize: 24, fontWeight: 'bold', marginLeft: 30, marginTop: 20, marginBottom: 10,}}>Ongoing Task</Text>
         
         <FlatList
             data={verticalData}
@@ -121,12 +121,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f7f0e8',
-  },
-
-  horizontalList: {
-    alignItems: 'center',
-    paddingLeft: 20,
-    marginLeft: 5,
   },
 
 });
