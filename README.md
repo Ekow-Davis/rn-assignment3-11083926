@@ -1,6 +1,10 @@
 # rn-assignment3-11083926
 Assignment 3 for DCIT 202
 
+## Screenshots
+Screenshots on how the app looks.
+
+
 ## Components Used
 Below are the components I used, some custom made, others derived from the react library
 

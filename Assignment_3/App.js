@@ -4,7 +4,7 @@ import SquareContainer from './Components/SquareContainer';
 import RectangularContainer from './Components/RectangularContainer'
 
 const verticalData = [
-  { key: '1', label: 'Mobile App Deveopment' },
+  { key: '1', label: 'Mobile App Development' },
   { key: '2', label: 'Web Development' },
   { key: '3', label: 'Creative Development' },
   { key: '4', label: 'Algorithms' },
@@ -16,7 +16,7 @@ const verticalData = [
   { key: '10', label: 'Data Mining' },
   { key: '11', label: 'Office Tools Productivity' },
   { key: '12', label: 'Digital & Logical Systems' },
-  { key: '13', label: 'Critical Thinkning' },
+  { key: '13', label: 'Critical Thinking' },
   { key: '14', label: 'Machine Learning' },
   { key: '15', label: 'System Administration' },
 ];
