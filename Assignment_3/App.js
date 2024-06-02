@@ -37,11 +37,11 @@ const FilterImage = require("./assets/Images/FilterIcon.png");
 const SearchImage = require("./assets/Images/SearchIcon.png");
 
 const handleFilterPress = () => {
-  alert('Filter button pressed.\nCannot use button component for andriod - expo go');
+  alert('Filter button pressed.\nCannot use button component for andriod to render images through expo go');
 };
 
 const handleButtonPress = () => {
-  alert('Button can only be rendered using string (for andriod)\nThank you for your time')
+  alert('Button can only be rendered using string (for andriod using expo)\nThank you for your time')
 }
 
 const App =() => {
@@ -71,7 +71,7 @@ const App =() => {
       </View>
 
       <Pressable onPress={handleFilterPress}>
-      <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 20, }} /> 
+      <Image source={FilterImage} style={{height: 50, width: 50, marginLeft: 18, }} /> 
       </Pressable>
 
     </View>
