@@ -63,7 +63,7 @@ const App =() => {
       <Image source={ProfileImage} style={{borderRadius: 50, marginVertical: 10, width: 60, height: 60, backgroundColor: "white", marginLeft: 140,}} />
     </View>
 
-    <View style={{flexDirection: 'row', marginLeft: 10,}}>
+    <View style={{flexDirection: 'row', marginLeft: 18,}}>
       
       <View style={{backgroundColor: "white", width: 280, height: 47, marginLeft: 10, borderRadius: 10, top: 3,}}>
         <Image source={SearchImage} style={{width: 25, height: 25, top: 10, marginLeft: 10, marginRight: 5,}}/>
