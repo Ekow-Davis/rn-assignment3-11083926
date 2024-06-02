@@ -123,6 +123,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f0e8',
   },
 
+  //I prefer Inline Styling since it makes viewing easier
+
 });
 
 export default App;
